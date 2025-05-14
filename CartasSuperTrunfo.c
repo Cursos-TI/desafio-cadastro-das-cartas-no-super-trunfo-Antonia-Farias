@@ -25,5 +25,10 @@ int main(){
 
     printf("Digite o PIB: \n");
     scanf("%f" , &PIB);
+
+    printf("Digite a quantidade de pontos turisticos: \n");
+    scanf("%d" , &quantidade_pontos_turisticos);
+
+    return 0;
    
 }
