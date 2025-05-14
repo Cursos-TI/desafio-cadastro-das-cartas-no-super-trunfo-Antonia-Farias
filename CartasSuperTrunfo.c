@@ -7,9 +7,9 @@ int main(){
     char codigo da cidade;
     char[20] nome;
     int populacao;
-    float area em km;
+    float area;
     float PIB;
-    int quantidade ponto turistico;
+    int quantidade pontos;
 
     printf("Digite o codigo da cidade: \n");
     scanf("%d", &codigo da cidade);
