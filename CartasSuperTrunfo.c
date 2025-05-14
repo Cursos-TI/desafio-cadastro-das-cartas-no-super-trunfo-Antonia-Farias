@@ -16,18 +16,18 @@ int main(){
 
     printf("Digite o nome da cidade: \n");
     scanf("%s" , nome_da_cidade);
-
+  
     printf("Digite a populacao: \n");
-    scanf("%d" , &populacao);
-
+    scanf(" %d" , &populacao);
+ 
     printf("Digite a area: \n");
-    scanf("%f" , &area);
+    scanf(" %f" , &area);
 
     printf("Digite o PIB: \n");
-    scanf("%f" , &PIB);
+    scanf(" %f" , &PIB);
 
     printf("Digite a quantidade de pontos turisticos: \n");
-    scanf("%d" , &quantidade_pontos_turisticos);
+    scanf(" %d" , &quantidade_pontos_turisticos);
 
     return 0;
    
