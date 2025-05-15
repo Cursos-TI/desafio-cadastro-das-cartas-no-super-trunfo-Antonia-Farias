@@ -29,6 +29,8 @@ int main(){
     printf("Digite a quantidade de pontos turisticos: \n");
     scanf(" %d" , &quantidade_pontos_turisticos);
 
+    printf("\n--- Dados da cidade cadastrada ---\n");
+
     return 0;
    
 }
