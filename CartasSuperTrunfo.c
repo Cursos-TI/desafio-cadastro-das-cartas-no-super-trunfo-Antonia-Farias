@@ -5,7 +5,7 @@ int main(){
     printf("Novo commit\n");
 
     char codigo_da_cidade;
-    char nome_da_cidade[20];
+    char nome_da_cidade[50];
     int populacao;
     float area;
     float PIB;
@@ -41,7 +41,7 @@ int main(){
     printf("Area da cidade: %.2f km²\n", area);
     printf("PIB da cidade: %.2f milhoes\n", PIB);
     printf("Quantidade de pontos turisticos: %d\n", quantidade_pontos_turisticos);
-    printf("Densidade populacional: %.2f hab/km\n" , densidade_populacional);
+    printf("Densidade populacional: %.2f hab/km²\n" , densidade_populacional);
     printf("Renda per capita: %.2f\n" , PIB_per_capta);
 
     return 0;
