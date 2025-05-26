@@ -10,6 +10,7 @@ int main(){
     float area;
     float PIB;
     int quantidade_pontos_turisticos;
+    float superpoder;
 
     printf("Digite o codigo da cidade: \n");
     scanf(" %c", &codigo_da_cidade);
@@ -33,6 +34,9 @@ int main(){
     // calculo:
     float densidade_populacional = populacao / area;
     float PIB_per_capta = PIB / populacao;
+
+    superpoder = populacao + area + pib + pib_per_capita + (1/ densidade_populacional) + pontos_turisticos;
+    printf (
 
     printf("\n--- Dados da cidade cadastrada ---\n");
     printf("Codigo da cidade: %c\n", codigo_da_cidade);
