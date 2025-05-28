@@ -1,53 +1,31 @@
 #include <stdio.h>
+#include <string.h>
 
-int main(){
-    printf("Desafio Super Trunfo\n");
-    printf("Novo commit\n");
+typedef struct {
 
-    char codigo_da_cidade;
-    char nome_da_cidade[50];
-    int populacao;
-    float area;
-    float PIB;
-    int quantidade_pontos_turisticos;
-    float superpoder;
+char estado[50];
+char codigo[20];
+char NomeCidade[50];
+int populacao;
+float area;
+float pib;
+int PontosTuristicos;
 
-    printf("Digite o codigo da cidade: \n");
-    scanf(" %c", &codigo_da_cidade);
+} Carta;
 
-    printf("Digite o nome da cidade: \n");
-    getchar();
-    scanf(" %[^\n]" , nome_da_cidade);
-    
-    printf("Digite a populacao: \n");
-    scanf(" %d" , &populacao);
- 
-    printf("Digite a area: \n");
-    scanf(" %f" , &area);
+float calcularDensidadePopulacional (Carta carta){
+    return carta.pib / carta.area;
+}
 
-    printf("Digite o PIB: \n");
-    scanf(" %f" , &PIB);
+float calcularPibPerCapita (Carta carta) {
+    return carta.pib / carta.populacao;
+}
 
-    printf("Digite a quantidade de pontos turisticos: \n");
-    scanf(" %d" , &quantidade_pontos_turisticos);
+void compararCartas (Carta carta1 , Carta carta2) {
+     float densidade1 = calcularDensidadePopulacional1(carta1);
+     float densidade2 = calcularDensidadePopulacional2(carta2);
 
-    // calculo:
-    float densidade_populacional = populacao / area;
-    float PIB_per_capta = PIB / populacao;
-
-    superpoder = populacao + area + pib + pib_per_capita + (1/ densidade_populacional) + pontos_turisticos;
-    printf (
-
-    printf("\n--- Dados da cidade cadastrada ---\n");
-    printf("Codigo da cidade: %c\n", codigo_da_cidade);
-    printf("Nome da cidade: %s\n", nome_da_cidade);
-    printf("Numero da populacao: %d\n", populacao);
-    printf("Area da cidade: %.2f km²\n", area);
-    printf("PIB da cidade: %.2f milhoes\n", PIB);
-    printf("Quantidade de pontos turisticos: %d\n", quantidade_pontos_turisticos);
-    printf("Densidade populacional: %.2f hab/km²\n" , densidade_populacional);
-    printf("Renda per capita: %.2f\n" , PIB_per_capta);
-
-    return 0;
-   
+     printf("Comparando a densidade populacional: \n");
+     printf("s (%s): Densidade = %.2f\n" , carta1.NomeCidade, carta1.estado, densidade1);
+     printf("s (%s): Densidade = %.2f\n" , carta2.NomeCidade, carta2.estado, densidade2);
 }
